@@ -15,7 +15,7 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent">
 
-            <!-- TODO (02) Replace hardcoded 16dp values with the spacing_normal dimen resource. -->
+            <!--  (02) Replace hardcoded 16dp values with the spacing_normal dimen resource. -->
 
             <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                         android:layout_height="wrap_content"
                         app:layout_constraintTop_toBottomOf="@id/title"
                         app:layout_constraintStart_toStartOf="@+id/start_grid"
-                        app:layout_constraintEnd_toStartOf="@+id/end_grid"
+                        app:layout_constraintEnd_toEndOf="@+id/end_grid"
                         android:text="@string/gdg_description_long"
                         android:layout_marginTop="8dp"/>
 
@@ -95,7 +95,7 @@
                         android:id="@+id/start_grid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintGuide_begin="16dp"
+                        app:layout_constraintGuide_begin="@dimen/spacing_normal"
                         android:orientation="vertical"/>
 
                 <androidx.constraintlayout.widget.Guideline
@@ -103,7 +103,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        app:layout_constraintGuide_end="16dp"/>
+                        app:layout_constraintGuide_end="@dimen/spacing_normal"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
 
